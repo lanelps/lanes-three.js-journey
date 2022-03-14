@@ -29,16 +29,6 @@ const chapters = [
     title: `Chapter 1`,
     lessons: [
       {
-        id: 1,
-        title: `Introduction`,
-        url: `/lessons/1`
-      },
-      {
-        id: 2,
-        title: `What is WebGL and why use Three.js`,
-        url: `/lessons/2`
-      },
-      {
         id: 3,
         title: `Basic Scene`,
         url: `/lessons/3`
