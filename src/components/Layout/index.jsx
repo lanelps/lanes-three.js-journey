@@ -2,6 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Global, css } from "@emotion/react";
 
+import { Menu } from "~components";
+
 const Layout = ({ children, className }) => (
   <>
     <Global
@@ -154,6 +156,7 @@ const Layout = ({ children, className }) => (
         gap: 1rem;
       `}
     >
+      <Menu />
       <main className={className}>{children}</main>
     </div>
   </>
