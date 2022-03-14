@@ -82,23 +82,12 @@ const chapters = [
         id: 13,
         title: `3D Text`,
         url: `/lessons/13`
-      },
-      {
-        id: 14,
-        title: `Go Live`,
-        url: `/lessons/14`
       }
-    ]
-  },
-  {
-    id: 2,
-    title: `Chapter 2`,
-    lessons: [
-      {
-        id: 1,
-        title: `Lights`,
-        url: `/lessons/15`
-      }
+      // {
+      //   id: 14,
+      //   title: `Go Live`,
+      //   url: `/lessons/14`
+      // }
     ]
   }
 ];
