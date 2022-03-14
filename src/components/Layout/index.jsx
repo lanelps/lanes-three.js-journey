@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Global, css } from "@emotion/react";
 
-import { Menu } from "~components";
+import { Menu, Grid } from "~components";
 
 const Layout = ({ children, className }) => (
   <>
@@ -112,7 +112,7 @@ const Layout = ({ children, className }) => (
           display: block;
         }
         body {
-          line-height: 1;
+          line-height: 1.3;
         }
         ol,
         ul {
@@ -150,15 +150,25 @@ const Layout = ({ children, className }) => (
         }
       `}
     />
-    <div
+    <Grid
       css={css`
-        display: flex;
-        gap: 1rem;
+        position: fixed;
+        height: 100vh;
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+        overflow-y: scroll;
       `}
     >
       <Menu />
-      <main className={className}>{children}</main>
-    </div>
+      <main
+        className={className}
+        css={css`
+          grid-column: 3/ -1;
+        `}
+      >
+        {children}
+      </main>
+    </Grid>
   </>
 );
 

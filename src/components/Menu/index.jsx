@@ -7,6 +7,10 @@ import { Go } from "~components";
 const MenuContainer = styled.article`
   padding: 1rem;
   border: 1px solid #fff;
+  grid-column: span 2;
+
+  max-height: calc(100vh - 4rem);
+  overflow-y: scroll;
 `;
 
 const List = styled.ul`

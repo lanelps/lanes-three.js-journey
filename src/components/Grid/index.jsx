@@ -19,10 +19,10 @@ export const GRID_PADDING_PX = remToPx(GRID_GAP_REM);
  * Receive a CSS grid wrapper to style guide spec.
  * @param  {node}   children  Inner JSX
  * @param  {string} node      Wrapper JSX node type (defaults to <div>)
- * @param  {object} _css      Additional Emotion/Tailwind CSS
+ * @param  {object} className      Additional Emotion/Tailwind CSS
  * @return {node}             The resulting CSS grid node
  */
-const Grid = ({ _css, children, node, half }) => {
+const Grid = ({ className, children, node, half }) => {
   const G = `${node}`;
 
   return (
@@ -48,9 +48,9 @@ const Grid = ({ _css, children, node, half }) => {
           ${half &&
           `justify-content: center;
           align-items: center;`}
-        `,
-        _css
+        `
       ]}
+      className={className}
     >
       {children}
     </G>
@@ -58,12 +58,12 @@ const Grid = ({ _css, children, node, half }) => {
 };
 
 Grid.defaultProps = {
-  _css: {},
+  className: ``,
   half: false,
   node: `div`
 };
 Grid.propTypes = {
-  _css: PropTypes.shape({}),
+  className: PropTypes.string,
   children: PropTypes.node.isRequired,
   half: PropTypes.bool,
   node: PropTypes.string
