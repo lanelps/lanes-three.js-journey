@@ -89,6 +89,17 @@ const chapters = [
       //   url: `/lessons/14`
       // }
     ]
+  },
+  {
+    id: 2,
+    title: `Chapter 2`,
+    lessons: [
+      {
+        id: 15,
+        title: `Lights`,
+        url: `/lessons/15`
+      }
+    ]
   }
 ];
 
