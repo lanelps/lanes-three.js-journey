@@ -98,6 +98,11 @@ const chapters = [
         id: 15,
         title: `Lights`,
         url: `/lessons/15`
+      },
+      {
+        id: 16,
+        title: `Shadows`,
+        url: `/lessons/16`
       }
     ]
   }
