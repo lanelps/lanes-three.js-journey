@@ -7,7 +7,7 @@ import { RectAreaLightHelper } from "three/examples/jsm/helpers/RectAreaLightHel
 
 import { Layout } from "~components";
 
-const Lesson14 = () => {
+const Lesson15 = () => {
   useEffect(() => {
     const gui = new dat.GUI();
 
@@ -339,4 +339,4 @@ const Lesson14 = () => {
   );
 };
 
-export default Lesson14;
+export default Lesson15;

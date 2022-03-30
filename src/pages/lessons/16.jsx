@@ -6,7 +6,7 @@ import * as dat from "lil-gui";
 
 import { Layout } from "~components";
 
-const Lesson14 = () => {
+const Lesson16 = () => {
   useEffect(() => {
     /**
      * Textures
@@ -250,4 +250,4 @@ const Lesson14 = () => {
   );
 };
 
-export default Lesson14;
+export default Lesson16;
